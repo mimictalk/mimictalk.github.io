@@ -88,6 +88,7 @@
         <div class="content has-text-centered is-centered">
           <h3 class="title is-4">Rebuttal Demo 2. Audio-to-Pose</h3>
           To <u><b>predict head pose from audio</b></u>, we additionally train an audio-to-pose model, which follows the main structure of the ICS-A2M model proposed in the original paper. The demo show that our model can produce novel head poses that are coherent with the input audio.<br></br>
+          <b>• Please focus on the head pose and ignore the lip motion (we have muted the driving audio).</b>
           <video controls preload width="50%">
             <source src="static/videos/rebuttal/audio2pose.mp4" type="video/mp4"> 
           </video>
@@ -100,6 +101,7 @@
         <div class="content has-text-centered is-centered">
           <h3 class="title is-4">Rebuttal Demo 3. Driven by OOD poses</h3>
           We additionally compare our method with the baseline when driven by <u><b>various OOD head poses</b></u>, and the results show that our method could well handle the OOD pose while the baseline cannot.<br></br>
+          <b>• Please focus on the head pose and ignore the lip motion (we have muted the driving audio).</b>
           <video controls preload width="50%">
             <source src="static/videos/rebuttal/ood_pose.mp4" type="video/mp4"> 
           </video>
@@ -112,6 +114,7 @@
         <div class="content has-text-centered is-centered">
           <h3 class="title is-4">Rebuttal Demo 4. Talking Style Mimicking</h3>
           We additionally introduce <u><b>classifier-free guidance (CFG)</b></u> into the ICS-A2M model, which further improves the style similarity for our flow-matching-based motion generation. The results show that our method could well handle <u><b>various style references (6 prompts in the video)</b></u>, while the baseline degrades in identity similarity.<br></br>
+          We tried difference classifier-free guidance scale (CFG) in the samppling process of the ICS-A2M model (default=1.0 in the original paper). We found increasing the CFG scale further improves the style similarity for our flow-matching-based motion generation. The results show that our method could well handle various style reeferences (6 prompts in the video) while the baseline degrades in identity similarity.
           <video controls preload width="50%">
             <source src="static/videos/rebuttal/more_style.mp4" type="video/mp4"> 
           </video>
