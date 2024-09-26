@@ -31,7 +31,8 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/logo.png">
+  <link rel="icon" href="./static/images/3dface_logo.png">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -42,106 +43,103 @@
 <body>
 <style> .table-warped {overflow:scroll;}</style>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column has-text-centered">
-        <h2 class="title is-1 publication-title">
-          MimicTalk: Mimicking a personalized and expressive 3D talking face in few minutes</h2>
-        <div class="is-size-5 publication-authors">
-          <span class="author-block">
-            Anonymous Authors</span>
-        </div>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
         <div class="column has-text-centered">
-          <div class="publication-links">
-            <!-- Code Link. -->
-            <span class="link-block">
-              <a href="" class="external-link button is-normal is-rounded is-dark" onclick="alert('We plan to release the source code after the rebuttal phase.')">
-              <span class="icon">
-              <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+          
+          <h1 class="title is-1 publication-title"> MimicTalk: Mimicking a personalized and expressive 3D talking face in few minutes</h1>
+          <h3 class="title is-5"> NeurIPS 2024 </h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yerfor.github.io">Zhenhui Ye</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a >Tianyun Zhong</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://rayeren.github.io/">Yi Ren</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Ziyue Jiang</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a >Jiawei Huang</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Rongjie Huang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Jinglin Liu</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="">Chen Zhang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a >Zehan Wang</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a >Xize Chen</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a >Xiang Yin</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://person.zju.edu.cn/zhaozhou">Zhou Zhao</a><sup>1*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Zhejiang University,</span>
+            <span class="author-block"><sup>2</sup>ByteDance,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openreview.net/forum?id=gjEzL0bamb" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Paper</span>
+                </a>
               </span>
-              <span>Code</span>
-              </a>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2401.08503" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+                <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yerfor/MimickTalk" class="external-link button is-normal is-rounded is-dark" onclick="">
+                <span class="icon">
+                <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                </span>
+                <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="./static/pages/rebuttal.html" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <svg class="svg-inline--fa fa-images fa-w-18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="images" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z"></path></svg><!-- <i class="far fa-images"></i> Font Awesome fontawesome.com -->
+                  </span>
+                  <span>Rebuttal Demos</span>
+                  </a>
               </span>
           </div>
-        </div>
-      </div>  
-    </div>
 
-    <!-- Post-Rebuttal Demos. -->
-    
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">Post-Rebuttal Demo 1. Mimicking Target Identity's In-Domain Talking Style</h3>
-          This demo shows that using the target identity's training video clip as the style prompt, our method could produce expressive results of the target identity with good identity similarity and style similarity, achieving the goal of personalized talking face generation (i.e., mimicking the target identity's visual attributes and talking style).<br></br>
-          <b>• Please focus on the lip motion, the talking face avatars are driven by the audio track in the video.</b>
+          </div>
           
-          <video controls preload width="50%">
-            <source src="static/videos/rebuttal/in_domain_style_prompt.mp4" type="video/mp4"> 
-          </video>
         </div>
       </div>
-    </div>
 
-    <!-- Rebuttal Demos. -->
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">Rebuttal Demo 1. More Identities</h3>
-          This demo compares our method with the baseline of <u><b>9 additional identities</b></u>, (all training videos are 10-second-long), and the results prove that our method has better data efficiency and lip-sync quality.<br></br>
-          <b>• Please focus on the lip motion, the talking face avatars are driven by the audio track in the video.</b>
-          
-          <video controls preload width="50%">
-            <source src="static/videos/rebuttal/more_ID.mp4" type="video/mp4"> 
-          </video>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">Rebuttal Demo 2. Audio-to-Pose</h3>
-          To <u><b>predict head pose from audio</b></u>, we additionally train an audio-to-pose model, which follows the main structure of the ICS-A2M model proposed in the original paper. The demo show that our model can produce novel head poses that are coherent with the input audio.<br></br>
-          <b>• Please focus on the head pose and ignore the lip motion (we have muted the driving audio).</b>
-          
-          <video controls preload width="50%">
-            <source src="static/videos/rebuttal/audio2pose.mp4" type="video/mp4"> 
-          </video>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">Rebuttal Demo 3. Driven by OOD poses</h3>
-          We additionally compare our method with the baseline when driven by <u><b>various OOD head poses</b></u>, and the results show that our method could well handle the OOD pose while the baseline cannot.<br></br>
-          <b>• Please focus on the head pose and ignore the lip motion (we have muted the driving audio).</b>
-
-          <video controls preload width="50%">
-            <source src="static/videos/rebuttal/ood_pose.mp4" type="video/mp4"> 
-          </video>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-centered">
-        <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">Rebuttal Demo 4. Talking Style Mimicking</h3>
-          We tried different <u><b>classifier-free guidance scale (CFG)</b></u> in the samppling process of the ICS-A2M model (default=1.0 in the original paper). We found increasing the CFG scale further improves the style similarity for our flow-matching-based motion generation. The results show that our method could well handle <u><b>various style references (6 prompts in the video)</b></u> while the baseline degrades in identity similarity.
-          <p></p>
-          <video controls preload width="50%">
-            <source src="static/videos/rebuttal/more_style.mp4" type="video/mp4"> 
-          </video>
-        </div>
-      </div>
-    </div>
-
-    <!-- Abstract. -->
+          <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
 
       <div class="column is-four-fifths">
@@ -154,6 +152,7 @@
       </div>
     </div>
     <!--/ Abstract. -->
+    
 
     <!-- Overall Framework -->
     <div class="columns is-centered has-text-centered">
@@ -175,9 +174,6 @@
   </div>
 <!-- </section> -->
   <div> </div>
-
-
-
 
 
     <div class="columns is-centered has-text-centered">
@@ -217,19 +213,33 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-centered">
         <div class="content has-text-centered is-centered">
-          <h3 class="title is-4">4. Comparison with StyleTalk for Talking Style Controll</h3>
+          <h3 class="title is-4">4. More Talking Style Controll Examples</h3>
           <video controls preload width="40%">
-            <source src="static/videos/comparison_with_styletalk.mp4" type="video/mp4"> 
+            <source src="static/videos/rebuttal/in_domain_style_prompt.mp4" type="video/mp4"> 
           </video>
         </div>
       </div>
     </div>
 
+    
 
   </div>
 </section>
 
 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+
+  <pre><code>@inproceedings{ye2024mimicktalk,
+    author    = {Ye, Zhenhui and Zhong, Tianyun and Ren, Yi and Yang, Jiaqi and Li, Weichuang and Huang, Jiangwei and Jiang, Ziyue and He, Jinzheng and Huang, Rongjie and Liu, Jinglin and Zhang, Chen and Yin, Xiang and Ma, Zejun and Zhao, Zhou},
+    title     = {MimicTalk: Mimicking a personalized and expressive 3D talking face in few minutes},
+    journal   = {NeurIPS},
+    year      = {2024},
+  }</code></pre>
+
+</div>
+</section>
 
 </body>
 </html>
